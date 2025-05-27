@@ -63,6 +63,11 @@
     radial-gradient(at 0% 0%, hsla(40, 100%, 76%, 1) 0px, transparent 50%);
 }
 
+.gradient-background-main {
+  background: #243338;
+  background: linear-gradient(71deg, rgba(36, 51, 56, 1) 0%, rgba(136, 172, 162, 1) 100%);
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

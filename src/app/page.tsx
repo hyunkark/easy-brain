@@ -76,7 +76,7 @@ export default function Home() {
               <Image width={680} height={680} src="/network.png" alt="hi" />
               <div className="absolute flex h-[680px] w-1080 items-center justify-center">
                 <div className="flex">
-                  <div className="mr-[100px] flex h-fit w-[440px] flex-col items-center rounded-lg bg-[rgba(225,225,225,0.85)] p-24 shadow-md backdrop-blur-xs">
+                  <div className="mr-[100px] flex h-fit w-[440px] flex-col items-center rounded-lg bg-[rgba(255,255,255,0.7)] p-24 shadow-md backdrop-blur-xs">
                     <h4 className="text-body-xl font-bold">진단</h4>
                     <div className="mt-20 flex h-[196px] w-full items-center justify-center">
                       <Image src="/brain.svg" width={140} height={140} alt="brain logo" />
@@ -97,7 +97,7 @@ export default function Home() {
                       </ul>
                     </div>
                   </div>
-                  <div className="mt-[140px] flex h-fit w-[440px] flex-col items-center rounded-lg bg-[rgba(225,225,225,0.85)] p-24 shadow-md backdrop-blur-xs">
+                  <div className="mt-[140px] flex h-fit w-[440px] flex-col items-center rounded-lg bg-[rgba(255,255,255,0.7)] p-24 shadow-md backdrop-blur-xs">
                     <h4 className="text-body-xl font-bold">치료</h4>
                     <div className="mt-20 flex h-[196px] w-full items-center justify-center">
                       <Image src="/lightning.svg" width={116} height={116} alt="lightning logo" />
