@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 export default function Treatments() {
   return (
     <div className="gradient-background-main flex flex-col items-center">
@@ -63,21 +64,51 @@ export default function Treatments() {
           </div>
         </div>
       </article>
-      <section className="mt-[180px] flex w-1200 flex-col items-center rounded-lg bg-white pt-40">
+      <section className="mt-64 flex w-1200 flex-col items-center rounded-lg bg-white pt-40">
         <h3 className="chip">진단에 쓰이는 기술</h3>
         <h2 className="h2 text-primary mt-24">정량뇌파검사(qEEG)</h2>
         <p className="text-body-l mt-8 mb-40 text-center font-bold">
           보다 과학적, 보다 객관적 치료를 위한 qEEG 정량뇌파
         </p>
         <p className="text-body-l mt-8 mb-40 w-1080 text-center font-medium break-keep">
-          최신 장비를 통해 뇌파를 측정하고 이를 의료용 소프트웨어인 뉴로가이드로 (Neuroguide; Applied Neuroscience,
-          Inc., Largo, FL, USA{' '}
-          <a href="https://appliedneuroscience.com/neuroguide/">https://appliedneuroscience.com/neuroguide/</a> )
+          최신 장비를 통해 뇌파를 측정하고 이를 의료용 소프트웨어인 뉴로가이드로
+          <span className="text-body-m">
+            (Neuroguide; Applied Neuroscience, Inc., Largo, FL, USA{' '}
+            <a
+              className="hover:text-primary underline"
+              target="_blank"
+              href="https://appliedneuroscience.com/neuroguide/"
+            >
+              https://appliedneuroscience.com/neuroguide/
+            </a>{' '}
+            )
+          </span>{' '}
           변환하여 뇌파의 불균형 여부를 쉽게 확인할 수 있는 검사입니다. 이 검사를 통해 뇌의 건강상태를 평가할 수 있으며
           치료약물 선택에 참고를 하며, 뉴료모듈레이션(deepTMS, rTMS, tDCS)등의 시술에 중요한 근거자료가 됩니다. 또한
           증상의 호전 및 치료효과 판정에도 유용합니다. 이 검사를 통해 보다 과학적이며 객관적인 치료를 할 수 있습니다.
         </p>
-        {/* Section 1-0: Figure */}
+        <Image src="/qeeg.png" alt="" width={800} height={600} className="mt-40 mb-64 shadow-2xl" />
+      </section>
+      <section className="mt-64 mb-160 flex w-1200 flex-col items-center rounded-lg bg-white pt-40">
+        <h3 className="chip">치료에 쓰이는 기술</h3>
+        <h2 className="h2 text-primary mt-24">deep TMS</h2>
+        <p className="text-body-l mt-8 mb-40 text-center font-bold">넓고 더 깊이 뇌 영역을 자극하다</p>
+        <p className="text-body-l mt-8 mb-40 w-1080 text-center font-medium break-keep">
+          deep TMS 장비는 미국식품의약국(FDA)승인과 유럽연합 통합규격인증(CE)를 받은 특허기술로 기존 TMS의 8자형
+          코일(rTMS)와 달리 코일이 내장된 헬멧을 쓰는 방식으로 치료하는 방법입니다. TMS대비 약 7배 넓고 더 깊숙이 뇌
+          영역을 직접 자극해 유일하게 ‘Deep TMS’라고 불리우는 최신 장비입니다.
+          <br />
+          <br />
+          임상 결과 기존 TMS치료 중 가장 강력한 치료 효과를 보이며 약물치료 대비 6배의 높은 치료 효과가 확인되었습니다.
+        </p>
+        <Image src="/deeptms.png" alt="" width={800} height={438} className="mt-40 mb-64 shadow-2xl" />
+        <h2 className="h2 text-primary mt-24">tDCS</h2>
+        <p className="text-body-l mt-8 mb-40 text-center font-bold">뇌 기능조절 그리고 치료</p>
+        <p className="text-body-l mt-8 mb-40 w-1080 text-center font-medium break-keep">
+          미세한 전기를 이용해 비정상적인 뇌의 기능을 조절해 치료하는 방법으로
+          <br /> 점진적으로 여러 영역에서 치료효과가 입증되고 있습니다.
+        </p>
+        <Image src="/tdcs.jpg" alt="" width={800} height={692} className="mt-40 mb-64 shadow-2xl" />
       </section>
     </div>
   );

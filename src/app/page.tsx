@@ -137,7 +137,7 @@ export default function Home() {
               ))}
             </Marquee>
             <h2 className="h2 text-primary mt-80 mb-64">소아청소년 진료</h2>
-            <Marquee direction="right">
+            <Marquee autoFill direction="right">
               {kidCondArr.map(item => (
                 <MarqueeElement key={item.src} caption={item.label} src={item.src} />
               ))}
@@ -156,7 +156,7 @@ export default function Home() {
               className="button mr-12"
               rel="external"
               target="_blank"
-              href="https://map.naver.com/p/entry/place/1707422910?c=20.00,0,0,0,dh"
+              href="https://m.booking.naver.com/booking/6/bizes/1179082?theme=place&service-target=map-pc&lang=ko&area=bmp&map-search=1#"
             >
               네이버 예약하기 링크 →
             </a>
