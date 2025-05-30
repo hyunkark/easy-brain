@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Marquee from 'react-fast-marquee';
 import MarqueeElement from '@/components/MarqueeElm';
+import Map from '@/components/Map';
 
 export default function Home() {
   const adultCondArr = [
@@ -183,6 +184,7 @@ export default function Home() {
               경기도 성남시 분당구 분당로53번길 나산프라자 3층 304호
             </a>
           </h3>
+          <Map />
         </section>
       </main>
     </div>
