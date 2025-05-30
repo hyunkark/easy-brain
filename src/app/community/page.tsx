@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export default function Community() {
+  const posts = [{ title: '2025년 설 연휴 휴진 일정 안내', href: '/community/2025-newyear', date: '2025.1.22' }];
   return (
     <>
       <div className="mb-80 w-full">
@@ -11,9 +12,16 @@ export default function Community() {
       </div>
       <div className="mb-80 w-full">
         <h3 className="text-title-s text-primary mb-24 font-bold">공지사항</h3>
-        <Link href="/community/2025-newyear" className="text-body-l flex h-80 items-center border-y font-semibold">
-          2025년 설 연휴 휴진 일정 안내
-        </Link>
+        {posts.map((item, index) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className={`text-body-l flex h-80 items-center justify-between ${index !== 0 ? 'border-b' : 'border-y'} font-semibold`}
+          >
+            <span>{item.title}</span>
+            <span>{item.date}</span>
+          </Link>
+        ))}
       </div>
     </>
   );
