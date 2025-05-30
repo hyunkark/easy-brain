@@ -1,8 +1,10 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import Marquee from 'react-fast-marquee';
 import MarqueeElement from '@/components/MarqueeElm';
 import Map from '@/components/Map';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
   const adultCondArr = [
@@ -38,9 +40,9 @@ export default function Home() {
       <main>
         {/* Section 0: Video & Heading */}
         <section>
-          <div className="w-full overflow-hidden">
+          <div className="h-[720px] w-full overflow-hidden">
             <video
-              className="h-auto w-full min-w-[712px] object-contain object-bottom-right"
+              className="h-full w-full min-w-[712px] object-cover object-top-right"
               autoPlay
               loop
               playsInline
@@ -50,11 +52,22 @@ export default function Home() {
               <source src="/landing.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="absolute top-0 left-0 flex h-full w-full flex-col items-center justify-center bg-[rgba(0,0,0,0.2)]">
-              <h1 className="text-[72px] font-bold text-white">
-                정신건강에 <span className="text-primary">마음을</span> 잇다
-              </h1>
-              <h2 className="text-body-xl mt-[30px] text-center font-semibold text-white">
+            <div className="absolute top-0 left-0 flex h-[720px] w-full flex-col items-center justify-center bg-[rgba(0,0,0,0.2)]">
+              <TypeAnimation
+                sequence={[
+                  '정신건강에 마음을 잇다',
+                  2000,
+                  '정신건강에 뇌 과학을 잇다',
+                  2000,
+                  '정신건강에 섬세한 진료를 잇다',
+                ]}
+                wrapper="h1"
+                preRenderFirstString
+                cursor={true}
+                repeat={Infinity}
+                className="text-[72px] font-bold text-white"
+              />
+              <h2 className="text-body-xl mt-[30px] text-center font-bold text-orange-300">
                 증상과 상관 없이 뇌 관련 신경생리학적
                 <br />
                 데이터에 기반한 진단과 치료
