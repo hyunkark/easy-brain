@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
-import Navigation from '../components/Navigation';
 import Script from 'next/script';
+import Navigation from '../components/Navigation';
 
 const pretendard = localFont({
   src: './PretendardVariable.woff2',
@@ -23,6 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <Script
+          type="text/javascript"
+          strategy="beforeInteractive"
+          src={`https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=${process.env.NEXT_PUBLIC_NAVER_CLIENT_ID}`}
+        />
+      </head>
       <body className={`${pretendard.className} antialiased`}>
         <Navigation />
         {children}
