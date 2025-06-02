@@ -37,8 +37,8 @@ export default function BlogPage() {
           </section>
           <section className={tableWrapperStyle}>
             <div className={thStyle}>검사료</div>
-            <div>{renderCell(['HRV(자율신경계검사)'])}</div>
-            <div>{renderCell(['50,000원'])}</div>
+            <div>{renderCell(['HRV(자율신경계검사)', 'RDS&TCI(기질 및 성격검사)'])}</div>
+            <div>{renderCell(['50,000원', '50,000원'])}</div>
           </section>
         </>
       }
