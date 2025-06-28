@@ -22,15 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" className="w-vw">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <Script
           type="text/javascript"
           strategy="beforeInteractive"
           src={`https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=${process.env.NEXT_PUBLIC_NAVER_CLIENT_ID}`}
         />
       </head>
-      <body className={`${pretendard.className} antialiased`}>
+      <body className={`${pretendard.className} w-vw antialiased`}>
         <Navigation />
         {children}
         <footer className="flex flex-col items-center bg-black">

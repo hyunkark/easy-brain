@@ -66,11 +66,10 @@ export default function Home() {
                 preRenderFirstString
                 cursor={true}
                 repeat={Infinity}
-                className="text-title-s font-bold text-white md:text-[54px] lg:text-[72px]"
+                className="text-title-s px-12 text-center font-bold break-keep text-white md:text-[54px] lg:text-[72px]"
               />
-              <h2 className="md:text-body-xl mt-12 text-center text-[24px] font-bold text-orange-300 md:mt-[30px]">
-                증상과 상관 없이 뇌 관련 신경생리학적
-                <br />
+              <h2 className="md:text-body-xl mt-12 px-12 text-center text-[24px] font-bold break-keep text-orange-300 md:mt-[30px]">
+                증상과 상관 없이 뇌 관련 신경생리학적 <br className="hidden md:inline-block" />
                 데이터에 기반한 진단과 치료
               </h2>
             </div>
@@ -82,11 +81,9 @@ export default function Home() {
           <article className="flex w-[86%] flex-col items-center rounded-lg bg-white pt-40 lg:w-1200">
             <h3 className="chip">진단과 치료</h3>
             <h2 className="h2 text-primary mt-20 md:mt-24">eNIT 진단법</h2>
-            <p className="text-body-m md:text-body-l mt-8 mb-40 text-center font-medium">
-              사람마다 다른 고유한 뇌의 data와 신경생리학적
-              <br className="inline-block md:hidden" /> 검사 정보를 기반으로
-              <br className="hidden md:inline-block" /> 개인화된 맞춤 치료전략을
-              <br className="inline-block md:hidden" /> 수립하는 것이 eNIT의 핵심입니다.
+            <p className="text-body-m md:text-body-l mt-8 mb-40 px-12 text-center font-medium break-keep">
+              사람마다 다른 고유한 뇌의 data와 신경생리학적 검사 정보를 기반으로
+              <br className="hidden md:inline-block" /> 개인화된 맞춤 치료전략을 수립하는 것이 eNIT의 핵심입니다.
             </p>
             {/* Section 1-0: Figure */}
             <div className="gradient-background mb-40 flex w-[90%] flex-col items-center rounded-lg lg:w-1080">
@@ -100,7 +97,7 @@ export default function Home() {
               <div className="flex h-fit min-h-[680px] w-1080 items-center justify-center py-24">
                 <div className="flex flex-col items-center lg:flex-row">
                   {/* Section 1-0-a. Card A */}
-                  <div className="flex h-fit w-[320px] flex-col items-center rounded-lg bg-[rgba(255,255,255,0.7)] p-24 shadow-md backdrop-blur-xs md:w-[440px] lg:mr-[100px]">
+                  <div className="flex h-fit w-[72vw] max-w-[320px] flex-col items-center rounded-lg bg-[rgba(255,255,255,0.7)] p-24 shadow-md backdrop-blur-xs md:w-[440px] md:max-w-[440px] lg:mr-[100px]">
                     <h4 className="text-body-l md:text-body-xl font-bold">진단</h4>
                     <div className="mt-8 flex h-140 w-full items-center justify-center md:mt-20 md:h-[196px]">
                       <Image
@@ -110,11 +107,11 @@ export default function Home() {
                         alt="brain logo"
                         className="h-[100px] w-[100px] md:h-140 md:w-140"
                       />
-                      <div className="chip absolute top-[60px] left-[40px] md:top-[100px] md:left-40">선별검사</div>
-                      <div className="chip absolute top-[64px] left-[200px] md:top-80">HRV</div>
-                      <div className="chip absolute top-[120px] left-[48px] md:top-[172px] md:left-80">TCI</div>
-                      <div className="chip absolute top-[124px] left-[220px] md:top-[146px] md:left-[300px]">qEEG</div>
-                      <div className="chip absolute top-[160px] left-[160px] md:top-[224px] md:left-[200px]">CPT</div>
+                      <div className="chip absolute top-[60px] left-[12vw] md:top-[100px] md:left-40">선별검사</div>
+                      <div className="chip absolute top-[64px] right-[13vw] md:top-80 md:left-[200px]">HRV</div>
+                      <div className="chip absolute top-[120px] left-[8vw] md:top-[172px] md:left-80">TCI</div>
+                      <div className="chip absolute top-[124px] right-[7vw] md:top-[146px] md:left-[300px]">qEEG</div>
+                      <div className="chip absolute top-[160px] left-[24vw] md:top-[224px] md:left-[200px]">CPT</div>
                     </div>
                     <div className="mt-24 w-full">
                       <h5 className="text-body-l mb-8 font-medium md:mb-12">뇌신경 생리학 검사</h5>
@@ -128,7 +125,7 @@ export default function Home() {
                     </div>
                   </div>
                   {/* Section 1-0-b. Card B */}
-                  <div className="mt-24 flex h-fit w-[320px] flex-col items-center rounded-lg bg-[rgba(255,255,255,0.7)] p-24 shadow-md backdrop-blur-xs md:w-[440px] lg:mt-[140px]">
+                  <div className="mt-24 flex h-fit w-[72vw] max-w-[320px] flex-col items-center rounded-lg bg-[rgba(255,255,255,0.7)] p-24 shadow-md backdrop-blur-xs md:w-[440px] md:max-w-[440px] lg:mt-[140px]">
                     <h4 className="text-body-l md:text-body-xl font-bold">치료</h4>
                     <div className="mt-8 flex h-140 w-full items-center justify-center md:mt-20 md:h-[196px]">
                       <Image
@@ -138,14 +135,14 @@ export default function Home() {
                         alt="lightning logo"
                         className="h-[98px] w-[98px] md:h-[116px] md:w-[116px]"
                       />
-                      <div className="chip absolute top-[60px] left-[48px] md:top-[100px] md:left-[68px]">dTMS</div>
-                      <div className="chip absolute top-[90px] left-[220px] md:left-[268px]">tDCS</div>
-                      <div className="chip absolute top-[128px] left-[28px] md:top-[188px]">
+                      <div className="chip absolute top-[60px] left-[8vw] md:top-[100px] md:left-[68px]">dTMS</div>
+                      <div className="chip absolute top-[90px] right-[8vw] md:left-[268px]">tDCS</div>
+                      <div className="chip absolute top-[128px] left-[4vw] md:top-[188px]">
                         Aripiprazole
                         <br />
                         Bupropion
                       </div>
-                      <div className="chip absolute top-[168px] left-[160px] md:top-[180px] md:left-[220px]">
+                      <div className="chip absolute top-[168px] right-[4vw] md:top-[180px] md:left-[220px]">
                         SSRIs, SNRIs
                       </div>
                     </div>
@@ -162,7 +159,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Link className="button mb-40 md:mb-80" href="/treatments">
+            <Link className="button mx-8 mb-40 break-keep md:mb-80" href="/treatments">
               진단과 치료 과정에 대해 좀 더 자세히 알아보기 →
             </Link>
           </article>
@@ -184,13 +181,14 @@ export default function Home() {
           </article>
         </section>
         {/* Section 3: Clinic Info */}
-        <section className="flex flex-col items-center">
+        <section className="flex flex-col items-center px-12">
           <h4 className="chip mt-40 mb-24">병원 정보</h4>
           <h2 className="h2 text-primary">예약 안내</h2>
-          <h3 className="text-body-l md:text-body-xl mt-20 mb-[24px] font-bold md:mb-40">
-            이지브레인 정신건강의학과 분당점 <a href="tel:031-701-8275">031-701-8275</a>
+          <h3 className="text-body-l md:text-body-xl mt-20 mb-[24px] text-center font-bold break-keep md:mb-40">
+            이지브레인 정신건강의학과 분당점 <br className="md:hidden" />
+            <a href="tel:031-701-8275">031-701-8275</a>
           </h3>
-          <div className="mb-48 flex">
+          <div className="mb-48 flex break-keep">
             <a
               className="button mr-12"
               rel="external"
@@ -204,20 +202,21 @@ export default function Home() {
             </a>
           </div>
           <h2 className="h2 text-primary mb-20">진료 시간</h2>
-          <ul className="text-body-m/[1.8] md:text-body-l/[1.8] font-medium">
+          <ul className="text-body-m/[1.8] md:text-body-l/[1.8] font-medium break-keep">
             <li>
-              <span className="text-primary inline-block w-140 font-bold">평일</span>10:00 ~ 19:00 / 점심시간 13:00 ~
-              14:00
+              <span className="text-primary inline-block w-fit pr-12 font-bold md:w-140">평일</span>10:00 ~ 19:00 /
+              점심시간 13:00 ~ 14:00
             </li>
             <li>
-              <span className="text-primary inline-block w-140 font-bold">토요일</span>10:00 ~ 14:00 / 점심시간 없음
+              <span className="text-primary inline-block w-fit pr-12 font-bold md:w-140">토요일</span>10:00 ~ 14:00 /
+              점심시간 없음
             </li>
             <li>
-              <span className="text-primary inline-block w-140 font-bold">일요일&공휴일</span>휴진
+              <span className="text-primary inline-block w-fit pr-12 font-bold md:w-140">일요일&공휴일</span>휴진
             </li>
           </ul>
           <h2 className="h2 text-primary mt-48 mb-20">주소</h2>
-          <h3 className="text-body-l md:text-body-xl font-bold">
+          <h3 className="text-body-l md:text-body-xl text-center font-bold break-keep">
             <a rel="external" target="_blank" href="https://map.naver.com/p/entry/place/1707422910?c=20.00,0,0,0,dh">
               경기도 성남시 분당구 분당로53번길 나산프라자 3층 304호
             </a>

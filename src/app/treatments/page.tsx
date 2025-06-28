@@ -6,11 +6,9 @@ export default function Treatments() {
       <article className="mt-120 flex w-[86%] flex-col items-center rounded-lg bg-white pt-40 md:mt-[180px] lg:w-1200">
         <h3 className="chip">진단과 치료</h3>
         <h2 className="h2 text-primary mt-20 md:mt-24">eNIT 진단법</h2>
-        <p className="text-body-m md:text-body-l mt-8 mb-40 text-center font-medium">
-          사람마다 다른 고유한 뇌의 data와 신경생리학적
-          <br className="inline-block md:hidden" /> 검사 정보를 기반으로
-          <br className="hidden md:inline-block" /> 개인화된 맞춤 치료전략을
-          <br className="inline-block md:hidden" /> 수립하는 것이 eNIT의 핵심입니다.
+        <p className="text-body-m md:text-body-l mt-8 mb-40 px-12 text-center font-medium break-keep">
+          사람마다 다른 고유한 뇌의 data와 신경생리학적 검사 정보를 기반으로
+          <br className="hidden md:inline-block" /> 개인화된 맞춤 치료전략을 수립하는 것이 eNIT의 핵심입니다.
         </p>
         {/* Section 1-0: Figure */}
         <div className="gradient-background mb-40 flex w-[90%] flex-col items-center rounded-lg lg:w-1080">
@@ -24,7 +22,7 @@ export default function Treatments() {
           <div className="flex h-fit min-h-[680px] w-1080 items-center justify-center py-24">
             <div className="flex flex-col items-center lg:flex-row">
               {/* Section 1-0-a. Card A */}
-              <div className="flex h-fit w-[320px] flex-col items-center rounded-lg bg-[rgba(255,255,255,0.7)] p-24 shadow-md backdrop-blur-xs md:w-[440px] lg:mr-[100px]">
+              <div className="flex h-fit w-[72vw] max-w-[320px] flex-col items-center rounded-lg bg-[rgba(255,255,255,0.7)] p-24 shadow-md backdrop-blur-xs md:w-[440px] md:max-w-[440px] lg:mr-[100px]">
                 <h4 className="text-body-l md:text-body-xl font-bold">진단</h4>
                 <div className="mt-8 flex h-140 w-full items-center justify-center md:mt-20 md:h-[196px]">
                   <Image
@@ -34,11 +32,11 @@ export default function Treatments() {
                     alt="brain logo"
                     className="h-[100px] w-[100px] md:h-140 md:w-140"
                   />
-                  <div className="chip absolute top-[60px] left-[40px] md:top-[100px] md:left-40">선별검사</div>
-                  <div className="chip absolute top-[64px] left-[200px] md:top-80">HRV</div>
-                  <div className="chip absolute top-[120px] left-[48px] md:top-[172px] md:left-80">TCI</div>
-                  <div className="chip absolute top-[124px] left-[220px] md:top-[146px] md:left-[300px]">qEEG</div>
-                  <div className="chip absolute top-[160px] left-[160px] md:top-[224px] md:left-[200px]">CPT</div>
+                  <div className="chip absolute top-[60px] left-[12vw] md:top-[100px] md:left-40">선별검사</div>
+                  <div className="chip absolute top-[64px] right-[13vw] md:top-80 md:left-[200px]">HRV</div>
+                  <div className="chip absolute top-[120px] left-[8vw] md:top-[172px] md:left-80">TCI</div>
+                  <div className="chip absolute top-[124px] right-[7vw] md:top-[146px] md:left-[300px]">qEEG</div>
+                  <div className="chip absolute top-[160px] left-[24vw] md:top-[224px] md:left-[200px]">CPT</div>
                 </div>
                 <div className="mt-24 w-full">
                   <h5 className="text-body-l mb-8 font-medium md:mb-12">뇌신경 생리학 검사</h5>
@@ -52,7 +50,7 @@ export default function Treatments() {
                 </div>
               </div>
               {/* Section 1-0-b. Card B */}
-              <div className="mt-24 flex h-fit w-[320px] flex-col items-center rounded-lg bg-[rgba(255,255,255,0.7)] p-24 shadow-md backdrop-blur-xs md:w-[440px] lg:mt-[140px]">
+              <div className="mt-24 flex h-fit w-[72vw] max-w-[320px] flex-col items-center rounded-lg bg-[rgba(255,255,255,0.7)] p-24 shadow-md backdrop-blur-xs md:w-[440px] md:max-w-[440px] lg:mt-[140px]">
                 <h4 className="text-body-l md:text-body-xl font-bold">치료</h4>
                 <div className="mt-8 flex h-140 w-full items-center justify-center md:mt-20 md:h-[196px]">
                   <Image
@@ -62,14 +60,14 @@ export default function Treatments() {
                     alt="lightning logo"
                     className="h-[98px] w-[98px] md:h-[116px] md:w-[116px]"
                   />
-                  <div className="chip absolute top-[60px] left-[48px] md:top-[100px] md:left-[68px]">dTMS</div>
-                  <div className="chip absolute top-[90px] left-[220px] md:left-[268px]">tDCS</div>
-                  <div className="chip absolute top-[128px] left-[28px] md:top-[188px]">
+                  <div className="chip absolute top-[60px] left-[8vw] md:top-[100px] md:left-[68px]">dTMS</div>
+                  <div className="chip absolute top-[90px] right-[8vw] md:left-[268px]">tDCS</div>
+                  <div className="chip absolute top-[128px] left-[4vw] md:top-[188px]">
                     Aripiprazole
                     <br />
                     Bupropion
                   </div>
-                  <div className="chip absolute top-[168px] left-[160px] md:top-[180px] md:left-[220px]">
+                  <div className="chip absolute top-[168px] right-[4vw] md:top-[180px] md:left-[220px]">
                     SSRIs, SNRIs
                   </div>
                 </div>
@@ -89,7 +87,7 @@ export default function Treatments() {
       </article>
       <section className="mt-64 flex w-[86%] flex-col items-center rounded-lg bg-white px-8 pt-40 lg:w-1200">
         <h3 className="chip">진단에 쓰이는 기술</h3>
-        <h2 className="h2 text-primary mt-24">정량뇌파검사(qEEG)</h2>
+        <h2 className="h2 text-primary mt-24 text-center">정량뇌파검사(qEEG)</h2>
         <p className="text-body-m md:text-body-l mt-8 mb-12 text-center font-bold md:mb-40">
           보다 과학적, 보다 객관적 치료를 위한 qEEG 정량뇌파
         </p>
@@ -98,7 +96,7 @@ export default function Treatments() {
           <span className="text-body-m">
             (Neuroguide; Applied Neuroscience, Inc., Largo, FL, USA{' '}
             <a
-              className="hover:text-primary underline"
+              className="hover:text-primary break-all underline"
               target="_blank"
               href="https://appliedneuroscience.com/neuroguide/"
             >

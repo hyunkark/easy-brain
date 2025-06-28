@@ -52,15 +52,15 @@
 }
 
 .chip {
-  @apply text-body-m md:text-body-l rounded-pill w-fit border border-green-500 bg-green-300 px-12 py-8 font-medium md:px-24 md:py-12;
+  @apply text-body-s md:text-body-l rounded-pill w-fit border border-green-500 bg-green-300 px-12 py-8 font-medium md:px-24 md:py-12;
 }
 
 .button {
-  @apply rounded-pill text-body-m bg-orange-300 px-[20px] py-[12px] font-medium text-white md:px-[28px] md:py-20 md:text-[24px];
+  @apply rounded-pill text-body-m bg-orange-300 px-[20px] py-[12px] text-center font-medium text-white md:px-[28px] md:py-20 md:text-[24px];
 }
 
 .h2 {
-  @apply text-title-s md:text-title-m font-bold;
+  @apply text-body-xl md:text-title-m font-bold;
 }
 
 .gradient-background {

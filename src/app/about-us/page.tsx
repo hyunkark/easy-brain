@@ -31,7 +31,7 @@ export default function AboutUs() {
 
   return (
     <div className="gradient-background-main flex flex-col items-center">
-      <h2 className="mt-[140px] mb-[80px] text-[30px] font-bold text-white md:mt-[240px] md:mb-[140px] md:text-[46px] lg:text-[58px]">
+      <h2 className="mt-[140px] mb-[80px] px-24 text-[30px] font-bold break-keep text-white md:mt-[240px] md:mb-[140px] md:text-[46px] lg:text-[58px]">
         안녕하세요!
         <br />
         함께 소통하는 정신건강의학과 전문의,
@@ -46,7 +46,7 @@ export default function AboutUs() {
           <br />
           정신건강의학과 전문의
         </p>
-        <ul className="text-body-m md:text-body-l mt-20 mb-40 list-outside list-disc leading-[1.5] font-medium break-keep md:mt-40 md:mb-80">
+        <ul className="text-body-s md:text-body-l mt-20 mb-40 list-outside list-disc leading-[1.5] font-medium break-keep md:mt-40 md:mb-80">
           <li>청소년 범죄예방위원회 위원 역임</li>
           <li>용인시 장기요양등급판정위원 역임</li>
           <li>용인시 정신보건 심판위원 역임</li>
