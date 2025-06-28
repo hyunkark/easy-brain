@@ -23,7 +23,7 @@ const Map = () => {
 
   return (
     <>
-      <div id="map" className="mt-40 mb-160 h-[400px] w-1080"></div>
+      <div id="map" className="mt-40 mb-160 h-[240px] w-[80%] md:h-[400px] lg:w-1080"></div>
     </>
   );
 };

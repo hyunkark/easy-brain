@@ -5,18 +5,21 @@ export default function Community() {
   return (
     <>
       <div className="mb-80 w-full">
-        <h3 className="text-title-s text-primary mb-24 font-bold">자주 묻는 질문</h3>
-        <Link href="/faq/not-covered" className="text-body-l flex h-80 items-center border-y font-semibold">
+        <h3 className="text-body-l md:text-title-s text-primary mb-24 font-bold">자주 묻는 질문</h3>
+        <Link
+          href="/faq/not-covered"
+          className="text-body-m md:text-body-l flex h-64 items-center border-y font-semibold md:h-80"
+        >
           비급여 항목
         </Link>
       </div>
       <div className="mb-80 w-full">
-        <h3 className="text-title-s text-primary mb-24 font-bold">공지사항</h3>
+        <h3 className="text-body-l md:text-title-s text-primary mb-24 font-bold">공지사항</h3>
         {posts.map((item, index) => (
           <Link
             key={item.href}
             href={item.href}
-            className={`text-body-l flex h-80 items-center justify-between ${index !== 0 ? 'border-b' : 'border-y'} font-semibold`}
+            className={`text-body-m md:text-body-l flex h-64 items-center justify-between md:h-80 ${index !== 0 ? 'border-b' : 'border-y'} font-semibold`}
           >
             <span>{item.title}</span>
             <span>{item.date}</span>

@@ -34,7 +34,7 @@ export default function RootLayout({
         <Navigation />
         {children}
         <footer className="flex flex-col items-center bg-black">
-          <div className="w-1080 pt-48 pb-80">
+          <div className="w-[80%] pt-48 pb-80 lg:w-1080">
             <div className="text-body-l mb-24 font-bold text-white">이지브레인정신건강의학과의원</div>
             <div className="text-light-gray text-body-s leading-[1.5] font-medium">
               이지브레인정신건강의학과의원 | 곽재봉 | 경기도 성남시 분당구 분당로53번길 12 서현나산빌딩 3층 |<br />

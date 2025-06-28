@@ -5,7 +5,7 @@ export default function Layout({
 }>) {
   return (
     <section className="flex flex-col items-center">
-      <div className="mt-[180px] w-1080">{children}</div>
+      <div className="mt-120 w-[86%] md:mt-[180px] lg:w-1080">{children}</div>
     </section>
   );
 }
