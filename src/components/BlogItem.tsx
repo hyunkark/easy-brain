@@ -13,8 +13,8 @@ export default function BlogItem({
 }) {
   return (
     <article className="mb-160">
-      <h3 className="text-primary text-body-l font-bold">{isFAQ ? '자주 묻는 질문' : '공지사항'}</h3>
-      <div className="text-body-xl border-primary mb-40 flex h-80 w-full items-center justify-between border-b font-semibold">
+      <h3 className="text-primary text-body-m md:text-body-l font-bold">{isFAQ ? '자주 묻는 질문' : '공지사항'}</h3>
+      <div className="text-body-l md:text-body-xl border-primary mb-40 flex w-full flex-col justify-between border-b font-semibold md:h-80 md:flex-row md:items-center">
         <h2>{title}</h2>
         <p className="text-gray-400">{date}</p>
       </div>

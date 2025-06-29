@@ -6,12 +6,19 @@
 }
 
 @theme {
+  --breakpoint-sm: 719px;
+  --breakpoint-md: 720px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1201px;
+  --breakpoint-2xl: 1202px;
   --text-title-m: 44px;
   --text-title-s: 36px;
   --text-body-xl: 28px;
   --text-body-l: 20px;
   --text-body-m: 16px;
   --text-body-s: 14px;
+  --text-body-xs: 12px;
+  --text-body-xxs: 10px;
 
   --radius-lg: 8px;
   --radius-md: 6px;
@@ -45,15 +52,15 @@
 }
 
 .chip {
-  @apply text-body-l rounded-pill w-fit border border-green-500 bg-green-300 px-24 py-12 font-medium;
+  @apply text-body-s md:text-body-l rounded-pill w-fit border border-green-500 bg-green-300 px-12 py-8 font-medium md:px-24 md:py-12;
 }
 
 .button {
-  @apply rounded-pill bg-orange-300 px-[28px] py-20 text-[24px] font-medium text-white;
+  @apply rounded-pill text-body-m bg-orange-300 px-[20px] py-[12px] text-center font-medium text-white md:px-[28px] md:py-20 md:text-[24px];
 }
 
 .h2 {
-  @apply text-title-m font-bold;
+  @apply text-body-xl md:text-title-m font-bold;
 }
 
 .gradient-background {
